@@ -1,6 +1,26 @@
+@media screen and (max-width: 640px) and (hover: none) and (pointer: coarse) {
+    .col-lg-4.col-md-12 {
+        margin-bottom: 2rem;
+    }
+}
+
+.flash-text {
+    color: #e6b422;
+    text-shadow: 0 0 10px #e6b422, 0 0 15px #e6b422;
+    padding: 20px;
+    text-align: center;
+    letter-spacing: 0.2em;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-image: url(./img/background.png);
+    background-size: cover;
+}
+
 body,
 .card {
-    background-color: rgb(46, 9, 94) !important;
+    background-color: #412079 !important;
 }
 
 body>div>div>div {
@@ -72,6 +92,7 @@ body>div>div>div {
         font-size: 3rem;
         cursor: pointer;
     }
+
     .front {
         transform: rotateY(-180deg);
     }
