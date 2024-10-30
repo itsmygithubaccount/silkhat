@@ -38,6 +38,7 @@ window.addEventListener('scroll', () => {
 });
 
 function showLoadingScreen() {
+  document.querySelector('.container').style.display = 'none';
   // 画面全体を覆う要素を作成
   const loadingScreen = document.createElement('div');
   loadingScreen.classList.add('loading-screen');
@@ -59,6 +60,6 @@ function showLoadingScreen() {
   // 1秒後にカバーを削除
   setTimeout(() => {
     clearInterval(intervalId);
-    loadingScreen.remove();
+    loadingScreen.remove(); document.querySelector('.container').style.display = 'block';
   }, 1000);
 }
