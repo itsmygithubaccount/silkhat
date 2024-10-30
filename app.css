@@ -5,7 +5,7 @@
 }
 
 .row {
-    background-color: #55006e;
+    background-color: #55006e !important;
 }
 
 #background {
@@ -43,7 +43,7 @@ body>div>div>div {
     width: 100%;
     /* 任意の横幅を指定 */
     position: relative;
-    background-color: #55006e;
+    background-color: #55006e !important;
 }
 
 /* 擬似要素とpadding-topでカードの高さを指定 */
