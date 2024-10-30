@@ -49,7 +49,7 @@ function showLoadingScreen() {
   loadingScreen.appendChild(animation);
 
   // 3つの絵文字を順番に表示する
-  const emojis = ['', '', ''];
+  const emojis = ['🎩', '🍷', '🌒'];
   let emojiIndex = 0;
   const intervalId = setInterval(() => {
     animation.textContent = emojis[emojiIndex];
