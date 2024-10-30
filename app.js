@@ -1,6 +1,7 @@
 window.addEventListener('load', () => {
     showLoadingScreen();
-    flipCard(0);
+    setTimeout(() => {
+        flipCard(0);
     if (window.innerWidth > 640) {
         flipCard(1);
         flipCard(2);
@@ -11,6 +12,7 @@ window.addEventListener('load', () => {
         el.innerHTML += '<span>🍷</span>';
         el.innerHTML += '<span>🌔</span>';
     }
+    }, 1000);
 });
 function flipCard(i) {
     const backCards = document.querySelectorAll('.card .back');
