@@ -1,7 +1,14 @@
 .loading-screen {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
+    height: 100vh; /* 画面の高さを100%に設定 */
+    width: 100vw; /* 画面の幅を100%に設定 */
+}
+
+.animation {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @media screen and (max-width: 640px) and (hover: none) and (pointer: coarse) {
