@@ -38,7 +38,6 @@ window.addEventListener('scroll', () => {
 });
 
 function showLoadingScreen() {
-  document.querySelector('.container').style.display = 'none';
   // 画面全体を覆う要素を作成
   const loadingScreen = document.createElement('div');
   loadingScreen.classList.add('loading-screen');
