@@ -1,18 +1,18 @@
 window.addEventListener('load', () => {
     showLoadingScreen();
-    setTimeout(() => {
+    setTimeout(()=>{
         flipCard(0);
-    if (window.innerWidth > 640) {
-        flipCard(1);
-        flipCard(2);
-    }
+        if (window.innerWidth > 640) {
+            flipCard(1);
+            flipCard(2);
+        }
+    },1500);
     for (let i = 0; i < 300; i++) {
         let el = document.querySelector('#background');
         el.innerHTML += '<span>🎩</span>';
         el.innerHTML += '<span>🍷</span>';
         el.innerHTML += '<span>🌔</span>';
     }
-    }, 1000);
 });
 function flipCard(i) {
     const backCards = document.querySelectorAll('.card .back');
