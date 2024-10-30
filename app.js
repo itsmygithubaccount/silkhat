@@ -59,6 +59,8 @@ function showLoadingScreen() {
   // 1秒後にカバーを削除
   setTimeout(() => {
     clearInterval(intervalId);
-    loadingScreen.remove(); document.querySelector('.container').style.display = 'block';
+    loadingScreen.remove();
+document.querySelector('.container').style.display = 'block';
+document.querySelector('#background').style.display = 'block';
   }, 1000);
 }
