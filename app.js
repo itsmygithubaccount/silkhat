@@ -1,5 +1,15 @@
 window.addEventListener('load', () => {
     flipCard(0);
+    if (window.innerWidth > 640) {
+        flipCard(1);
+        flipCard(2);
+    }
+    for (let i = 0; i < 300; i++) {
+        let el = document.querySelector('#background');
+        el.innerHTML += '<span>🎩</span>';
+        el.innerHTML += '<span>🍷</span>';
+        el.innerHTML += '<span>🌔</span>';
+    }
 });
 function flipCard(i) {
     const backCards = document.querySelectorAll('.card .back');
