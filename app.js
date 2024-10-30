@@ -27,7 +27,7 @@ function flipCards() {
     for (let i = 0; i < cards.length; i++) {
         var scroll = window.scrollY; //スクロール量を取得
         var windowHeight = window.innerHeight; //画面の高さを取得
-        var targetPos = cards[i].getBoundingClientRect().top + scroll+getComputedStyle(cards[i]).fontSize.replace('px','')*10; //ターゲット要素の位置を取得
+        var targetPos = cards[i].getBoundingClientRect().top + scroll+getComputedStyle(cards[i]).fontSize.replace('px','')*20; //ターゲット要素の位置を取得
         if (scroll > targetPos - windowHeight) { //スクロール量 > ターゲット要素の位置
             flipCard(i);
         }
