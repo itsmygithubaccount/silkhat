@@ -5,16 +5,18 @@
 
 .loading-screen {
     position: relative;
-    height: 100vh; /* 画面の高さを100%に設定 */
-    width: 100vw; /* 画面の幅を100%に設定 */
+    height: 100vh;
+    /* 画面の高さを100%に設定 */
+    width: 100vw;
+    /* 画面の幅を100%に設定 */
 }
 
 .animation {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 3rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
 }
 
 @media screen and (max-width: 640px) and (hover: none) and (pointer: coarse) {
@@ -27,15 +29,16 @@
     font-size: 1.5rem;
     position: fixed;
     background-color: #55006e;
+
     span {
-        padding: 3rem 1rem;
+        padding: 1rem 1rem;
         opacity: 0.5;
     }
 }
 
 .flash-text {
     color: #e6b422;
-    text-shadow: 0 0 10px #e6b422, 0 0 15px #e6b422;
+    text-shadow: 0 0 10px #f6f890, 0 0 15px #f6f890;
     padding: 20px;
     text-align: center;
     letter-spacing: 0.2em;
@@ -125,12 +128,21 @@ iframe {
     border-radius: 1rem;
 }
 
-/* ホバー時のカード裏面 */
-/* .card:hover .back {
-    transform: rotateY(180deg);
-} */
+.col-lg-4,
+.col-md-12 {
+    margin-top: 1rem;
+}
 
-/* ホバー時のカード表面 */
-/* .card:hover .front {
-    transform: rotateY(0);
-} */
+.instagram-media {
+    background: white !important;
+    width: 100% !important;
+    max-width: 297px !important;
+    min-width: 297px !important;
+    border-radius: 3px !important;
+    border: 1px solid rgb(219, 219, 219) !important;
+    box-shadow: none !important;
+    display: block !important;
+    margin: 0px 0px 12px !important;
+    padding: 0px !important;
+    height: 420px !important;
+}
