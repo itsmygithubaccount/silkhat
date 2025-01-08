@@ -28,11 +28,9 @@
 #background {
     position: fixed;
     background-color: #55006e;
-    padding: 1rem;
 
     img {
         opacity: 0.5;
-        margin: 5rem 0 0 0;
     }
 }
 
@@ -121,6 +119,10 @@ body>div>div>div {
 
     .front {
         transform: rotateY(-180deg);
+    }
+
+    img {
+        margin: 5rem 1rem 0 1rem;
     }
 }
 
