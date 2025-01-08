@@ -121,8 +121,11 @@ body>div>div>div {
         transform: rotateY(-180deg);
     }
 
-    img.top-image {
-        margin: 5rem 1rem 0 1rem;
+    .front.top {
+        padding: 1rem;
+        img.top-image {
+            margin: 5rem 0 0 0;
+        }
     }
 }
 
