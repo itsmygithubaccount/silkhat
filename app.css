@@ -28,9 +28,11 @@
 #background {
     position: fixed;
     background-color: #55006e;
+    padding: 1rem;
 
     img {
         opacity: 0.5;
+        margin: 5rem 1rem 0 0;
     }
 }
 
