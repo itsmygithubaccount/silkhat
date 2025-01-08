@@ -8,14 +8,19 @@ window.addEventListener('load', () => {
         }
     }, 1500);
     let el = document.querySelector('#background');
-    el.innerHTML += '<div>';
-    for (let i = 0; i < 300; i++) {
-        el.innerHTML += '<span>🎩</span>';
-        el.innerHTML += '<span>🍷</span>';
-        el.innerHTML += '<span>🌔</span>';
+    if (isSmartPhone()) {
+        el.innerHTML = '<img src="img/emoji-pattern-mobile.png">';
+    } else {
+        el.innerHTML = '<img src="img/emoji-pattern-pc.png">';
     }
-    el.innerHTML += '</div>';
 });
+function isSmartPhone() {
+    if (navigator.userAgent.match(/iPhone|Android.+Mobile/)) {
+        return true;
+    } else {
+        return false;
+    }
+}
 function flipCard(i) {
     const backCards = document.querySelectorAll('.card .back');
     const frontCards = document.querySelectorAll('.card .front');
